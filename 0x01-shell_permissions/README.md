@@ -4,3 +4,4 @@
 3 -> This script changes the owner of a file to new owner
 4 -> This scrit creats a file hello
 5 -> This script execute permission
+6 -> This script adds execution permission to the owner
