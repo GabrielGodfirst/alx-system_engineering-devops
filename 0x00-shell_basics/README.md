@@ -10,3 +10,4 @@
 9 -> This script deletes my first directory from /tmp
 10 -> This script changes the current working directory to the previous one
 11 -> This script list files boot hidden and in the boot
+12 -> This script displays file type iamafile
