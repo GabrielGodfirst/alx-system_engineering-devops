@@ -8,3 +8,4 @@
 7 -> This script moves Betty from /tmp to /tmp/my first directory
 8 -> This script deletes betty from /tmp/ my first directory
 9 -> This script deletes my first directory from /tmp
+10 -> This script changes the current working directory to the previous one
