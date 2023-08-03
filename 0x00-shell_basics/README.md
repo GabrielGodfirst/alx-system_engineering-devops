@@ -7,3 +7,4 @@
 6 -> This script creates a directory in /tmp/
 7 -> This script moves Betty from /tmp to /tmp/my first directory
 8 -> This script deletes betty from /tmp/ my first directory
+9 -> This script deletes my first directory from /tmp
