@@ -7,4 +7,5 @@
 6 -> This script gives only read permission to other users
 7 -> This script gives equal permission to all user
 8 -> This script set permission to hello
-9 -> This script sets the mode of the file 
+9 -> This script sets the mode of the file
+10 -> This script grant permission as mirror permission 
