@@ -5,4 +5,5 @@
 4 -> This scrit creats a file hello
 5 -> This script execute permission
 6 -> This script gives only read permission to other users
-7 -> This script gives equal permission to all user 
+7 -> This script gives equal permission to all user
+8 -> This script set permission to hello 
