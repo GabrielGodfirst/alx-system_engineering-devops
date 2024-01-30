@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script displays the content of /etc/passwd
+
+while IFS=':' read -r username _ uid gid info home shell; do
+    echo "The user $username has group ID $gid, lives in $home."
+    echo "$uid's place is protected by passcode x, more info: $info"
+done < /etc/passwd
