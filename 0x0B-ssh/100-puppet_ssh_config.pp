@@ -1,3 +1,6 @@
+#!/usr/bin/env bash
+# Puppet manifest to create an SSH configuration file for the client
+
 file { '/home/ubuntu/.ssh/config':
   ensure  => 'file',
   owner   => 'ubuntu',
