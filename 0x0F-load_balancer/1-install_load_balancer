@@ -21,7 +21,7 @@ frontend sammykingx.tech
 
 backend web_servers
         balance roundrobin
-        server 491018-web-01 54.173.28.102:80
+        server 491018-web-01 52.91.127.222:80
         server 491018-web-02 54.87.180.142:80
 ' > /etc/haproxy/haproxy.cfg
 
