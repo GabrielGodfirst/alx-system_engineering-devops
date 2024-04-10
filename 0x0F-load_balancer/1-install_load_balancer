@@ -15,7 +15,7 @@ fi
 
 # Configure HAProxy to distribute requests using a roundrobin algorithm
 echo '
-frontend sammykingx.tech
+frontend anosco.tech
         bind 0:80
         default_backend web_servers
 
