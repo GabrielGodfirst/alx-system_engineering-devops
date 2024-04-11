@@ -23,7 +23,17 @@ backend web_servers
         balance roundrobin
         server 491018-web-01 52.91.127.222:80
         server 491018-web-02 54.87.180.142:80
-' > /etc/haproxy/haproxy.cfg
+
+frontend acme_challenge
+	bind 0:80
+	acl url_acme path_beg -i /.well-known/acme-challenge/
+	use_backend acme_servers if url_acme
+
+backend acme_servers
+	balance roundrobin
+        server 491018-web-01 52.91.127.222:80
+        server 491018-web-02 54.87.180.142:80
+' >> /etc/haproxy/haproxy.cfg
 
 # Restart HAProxy service
 systemctl restart haproxy
