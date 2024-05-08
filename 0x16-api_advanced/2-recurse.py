@@ -1,29 +1,37 @@
 #!/usr/bin/python3
+"""
+Recursive function that queries the Reddit API and returns
+a list containing the titles of all hot articles for a given subreddit.
+If no results are found for the given subreddit,
+the function should return None.
+"""
 
 import requests
 
 
-def recurse(subreddit, hot_list=[]):
+def recurse(subreddit, hot_list=[], after=""):
     """
-    Recursively queries the Reddit API and returns a list containing the titles
+    Queries the Reddit API and returns
+    a list containing the titles of all hot articles for a given subreddit.
+
+    - If not a valid subreddit, return None.
     """
-    url = f"https://www.reddit.com/r/{subreddit}/hot.json"
-    headers = {'User-Agent': 'Custom User Agent'}
-    params = {'limit': 100}
+    req = requests.get(
+        "https://www.reddit.com/r/{}/hot.json".format(subreddit),
+        headers={"User-Agent": "Custom"},
+        params={"after": after},
+    )
 
-    response = requests.get(url, headers=headers, params=params)
+    if req.status_code == 200:
+        for get_data in req.json().get("data").get("children"):
+            dat = get_data.get("data")
+            title = dat.get("title")
+            hot_list.append(title)
+        after = req.json().get("data").get("after")
 
-    if response.status_code == 200:
-        data = response.json()
-        posts = data['data']['children']
-
-        for post in posts:
-            hot_list.append(post['data']['title'])
-
-        # Check if there are more pages to fetch
-        if 'after' in data['data'] and data['data']['after'] is not None:
-            return recurse(subreddit, hot_list=hot_list)
-        else:
+        if after is None:
             return hot_list
+        else:
+            return recurse(subreddit, hot_list, after)
     else:
-        return (None)
+        return None
