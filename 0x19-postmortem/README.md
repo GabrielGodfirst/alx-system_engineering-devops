@@ -4,8 +4,11 @@ Web Stack Outage
 Issue Summary:
 
 . Duration: The outage occurred from 10:00 AM to 12:00 PM (UTC), lasting for a total of 2 hours.
-. Impact: The outage affected the availability of our main website, causing it to be completely inaccessible for users. Approximately 75% of our users were unable to access the website during this time, resulting in a significant loss of traffic and potential revenue.
-. Root Cause: The root cause of the outage was identified as a misconfiguration in the load balancer settings, causing it to overload and fail to distribute traffic effectively.
+. Impact: The outage affected the availability of our main website, causing it to be completely inaccessible for users. 
+Approximately 75% of our users were unable to access the website during this time, resulting in a significant loss of 
+traffic and potential revenue.
+. Root Cause: The root cause of the outage was identified as a misconfiguration in the load balancer settings, 
+causing it to overload and fail to distribute traffic effectively.
 
 Timeline:
 
@@ -20,8 +23,10 @@ Timeline:
 
 Root Cause and Resolution:
 
-. Cause: The misconfiguration in the load balancer settings resulted in uneven distribution of traffic among servers, leading to overload and service degradation.
-. Resolution: The issue was fixed by reverting the load balancer configuration to its previous state, ensuring balanced traffic distribution and restoring service availability.
+. Cause: The misconfiguration in the load balancer settings resulted in uneven distribution of traffic among servers, 
+leading to overload and service degradation.
+. Resolution: The issue was fixed by reverting the load balancer configuration to its previous state, 
+ensuring balanced traffic distribution and restoring service availability.
 Corrective and Preventative Measures:
 
 Improvements/Fixes:
