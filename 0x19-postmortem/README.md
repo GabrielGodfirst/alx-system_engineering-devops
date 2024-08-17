@@ -11,4 +11,5 @@ Root Cause and Resolution:
 Resolution: Apache and Mysql-client was successfully installed on an upgraded ubuntu machine, ubuntu 20 which accepts the installation with all dependencies supported to be able to debug the wordpress website.
 
 Corrective and Preventative Measures:
- Improvements/Fixes: PHP is no longer supported on older versions of ubuntu machines, issues of missing dependencies  may affect the smooth process of debugging the wordpress website. Upgraded versions of the machine most especially Ubuntu 20 is well supported to run the debugging processes.
+ Improvements/Fixes: PHP is no longer supported on older versions of ubuntu machines, issues of missing dependencies  may affect the smooth process of debugging the wordpress website. Upgraded versions of the machine most especially Ubuntu 20 is well supported to run the debugging processes
+![Example Image](images/post.png).
