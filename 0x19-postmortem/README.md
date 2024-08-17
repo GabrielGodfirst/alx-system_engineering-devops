@@ -1,3 +1,5 @@
+![Example Image](images/post.png).
+
 Postmortem Report: Wordpress PHP Support Issues on ubuntu 14
 
 
@@ -12,4 +14,3 @@ Resolution: Apache and Mysql-client was successfully installed on an upgraded ub
 
 Corrective and Preventative Measures:
  Improvements/Fixes: PHP is no longer supported on older versions of ubuntu machines, issues of missing dependencies  may affect the smooth process of debugging the wordpress website. Upgraded versions of the machine most especially Ubuntu 20 is well supported to run the debugging processes
-![Example Image](images/post.png).
