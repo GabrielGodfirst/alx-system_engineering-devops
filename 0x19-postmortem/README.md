@@ -32,5 +32,7 @@ Corrective and Preventative Measures:
 Tasks to Address the Issue:
 
 Update PHP: Upgrade PHP on all servers running outdated versions to ensure compatibility with current applications.
+
 Implement Monitoring: Add monitoring for PHP versions and lifecycle status to receive alerts before they become unsupported.
+
 Review Update Procedures: Review and enhance the update procedures for all server software to include regular checks for end-of-life software.
